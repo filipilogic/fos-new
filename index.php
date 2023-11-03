@@ -46,7 +46,7 @@ endif;
 								$args = array(
 									'post_type'      => 'post',
 									'post_status'    => 'publish',
-									'posts_per_page' => 9,
+									'posts_per_page' => 1,
 									'tax_query'      => array(
 										array(
 											'taxonomy' => 'category',
@@ -89,11 +89,6 @@ endif;
 									wp_reset_query();
 								endif;
 							?>
-						</div>
-
-						<div class="prev-next-container">
-							<img decoding="async" src="/wp-content/uploads/2023/10/Previous_bttn.png" class="carousel-previous-button"><br>
-							<img decoding="async" src="/wp-content/uploads/2023/10/Next_bttn.png" class="carousel-next-button">
 						</div>
 
 						<h2 class="intro_title title-style-2 title-size-2 title-weight-700" style="--title_margin_bottom_ld: 5rem;--title_margin_bottom_mt: 25px;"><?php echo $blog_middle_title; ?></h2>

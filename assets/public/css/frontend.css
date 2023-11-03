@@ -495,6 +495,11 @@ div.margin-xl {
   margin-bottom: 6rem;
   position: relative;
 }
+@media (max-width: 1199.5px) {
+  .blog-main-container .blog-main-container-inner .blog-main-container-top-posts {
+    margin-bottom: 10rem;
+  }
+}
 .blog-main-container .blog-main-container-inner .blog-main-container-top-posts article {
   display: flex;
   align-items: center;
@@ -598,38 +603,15 @@ div.margin-xl {
 .blog-main-container .blog-main-container-inner .blog-main-container-top-posts article a:hover:after {
   background: linear-gradient(0deg, rgba(43, 44, 108, 0.8) 0%, rgba(43, 44, 108, 0.56) 100%);
 }
-@media (max-width: 1199.5px) {
-  .blog-main-container .blog-main-container-inner .prev-next-container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 35px;
-  }
-  .blog-main-container .blog-main-container-inner .prev-next-container img {
-    width: 42px;
-    height: 42px;
-  }
-  .blog-main-container .blog-main-container-inner .prev-next-container .carousel-previous-button {
-    margin-right: 3.6rem;
-    cursor: pointer;
-  }
-  .blog-main-container .blog-main-container-inner .prev-next-container .carousel-next-button {
-    cursor: pointer;
-  }
-  .blog-main-container .blog-main-container-inner .flickity-prev-next-button {
-    display: none;
-  }
-}
-@media (min-width: 1199.6px) {
-  .blog-main-container .blog-main-container-inner .prev-next-container {
-    display: none;
-  }
-}
 .blog-main-container .blog-main-container-inner .blog-main-container-middle-posts {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+}
+@media (max-width: 1199.5px) {
+  .blog-main-container .blog-main-container-inner .blog-main-container-middle-posts {
+    margin-bottom: 2rem;
+  }
 }
 @media (max-width: 479.5px) {
   .blog-main-container .blog-main-container-inner .blog-main-container-middle-posts {

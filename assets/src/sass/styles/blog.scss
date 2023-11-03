@@ -7,6 +7,9 @@
         .blog-main-container-top-posts {
             margin-bottom: 6rem;
             position: relative;
+            @include limbo-max {
+                margin-bottom: 10rem;
+            }
             article {
                 display: flex;
                 align-items: center;
@@ -96,39 +99,14 @@
                 }
             }
         }
-        @include limbo-max {
-          .prev-next-container {
-              display: flex;
-              width: 100%;
-              justify-content: center;
-              margin-top: 15px;
-              margin-bottom: 35px;
-              img {
-                  width: 42px;
-                  height: 42px;
-              }
-              .carousel-previous-button {
-                  margin-right: 3.6rem;
-                  cursor: pointer;
-              }
-              .carousel-next-button {
-                  cursor: pointer;
-              }
-          }
-          .flickity-prev-next-button {
-              display: none;
-          }
-        }
-        @include desk-min {
-          .prev-next-container {
-            display: none;
-          }
-        }
     
         .blog-main-container-middle-posts {
             display: flex;
             flex-wrap: wrap;
             align-items: stretch;
+            @include limbo-max {
+                margin-bottom: 2rem;
+            }
             @include mob-only{
                 flex-direction: column;
             }

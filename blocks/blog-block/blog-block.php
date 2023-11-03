@@ -8,6 +8,7 @@ $categories_list = get_field('pick_a_category_blog_block');
 $posts_per_page = get_field('posts_per_page');
 $carousel = get_field('carousel');
 $show_date = get_field('show_date');
+$show_homepage_image = get_field('show_homepage_image');
 
 $learn_more_text = get_field('learn_more_text');
 
@@ -121,7 +122,13 @@ if( $custom_padding ) {
                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                             <a href="<?php the_permalink(); ?>">
                                 <?php
-                                the_post_thumbnail( array(508, 250) );
+                                $homepage_image = get_field('homepage_image', get_the_ID());
+                                if ( $show_homepage_image && $homepage_image ) {
+                                    $size = 'full';
+                                    echo wp_get_attachment_image( $homepage_image, $size, false );
+                                } else {
+                                    the_post_thumbnail( array(508, 250) );
+                                }
                                 ?>
                                 <div class="article-container">
                                     <?php if( $show_date ) { ?>

@@ -860,12 +860,6 @@
       }
     }
     .intro_text {
-      p {
-        font-weight: 600;
-        @include desk-min {
-          font-size: 2.4rem;
-        }
-      }
       .past-event-info-container {
         p {
             @include tab-max {

@@ -4044,14 +4044,6 @@ div.margin-xl {
   color: var(--color-1);
   text-decoration: none;
 }
-.past-event-hero-section .il_block_intro .intro_text p {
-  font-weight: 600;
-}
-@media (min-width: 1199.6px) {
-  .past-event-hero-section .il_block_intro .intro_text p {
-    font-size: 2.4rem;
-  }
-}
 @media (max-width: 797.5px) {
   .past-event-hero-section .il_block_intro .intro_text .past-event-info-container p {
     max-width: 62rem;

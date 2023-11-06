@@ -400,6 +400,9 @@ div.margin-xl {
   font-size: 20px;
   color: var(--color-2);
 }
+.archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-posts .pagination .page-numbers.current {
+  font-weight: 700;
+}
 .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-sidebar {
   width: 23%;
   box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.1607843137);
@@ -768,6 +771,9 @@ div.margin-xl {
   font-size: 20px;
   color: var(--color-2);
 }
+.blog-main-container .blog-main-container-inner .blog-main-container-middle-posts .pagination .page-numbers.current {
+  font-weight: 700;
+}
 .blog-main-container .blog-main-container-inner .blog-main-container-bottom-posts {
   display: flex;
   flex-wrap: wrap;
@@ -927,6 +933,9 @@ div.margin-xl {
 .blog-main-container .blog-main-container-inner .blog-main-container-bottom-posts .pagination .page-numbers.prev, .blog-main-container .blog-main-container-inner .blog-main-container-bottom-posts .pagination .page-numbers.next {
   font-size: 20px;
   color: var(--color-2);
+}
+.blog-main-container .blog-main-container-inner .blog-main-container-bottom-posts .pagination .page-numbers.current {
+  font-weight: 700;
 }
 
 .wpcf7-form {

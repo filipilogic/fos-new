@@ -256,15 +256,6 @@ add_filter( 'block_categories_all', 'filter_block_categories_when_post_provided'
   add_action('wp_ajax_blog_load_more', 'blog_load_more');
   add_action('wp_ajax_nopriv_blog_load_more', 'blog_load_more');
 
-add_filter('pre_get_posts', 'posts_in_category');
-function posts_in_category($query){
-	if(is_category()){
-		if ($query->is_category) {
-			$query->set('posts_per_archive_page', 4);
-		}
-	}
-}
-
 function the_breadcrumb() {
 
 	$page_for_posts_id = get_option( 'page_for_posts' );

@@ -2200,7 +2200,7 @@ main {
     font-size: 16px;
   }
   .header-version-1 .header-main-inner .logo-wrap {
-    flex: 15% 0 0;
+    flex: 16% 0 0;
     line-height: 0;
     height: 9rem;
     display: flex;
@@ -2215,6 +2215,8 @@ main {
        object-fit: contain;
     -o-object-position: left;
        object-position: left;
+    width: auto;
+    min-height: 9rem;
   }
   .header-version-1 .header-main-inner .nav-button.il_btn {
     flex-shrink: 0;

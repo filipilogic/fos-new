@@ -299,14 +299,12 @@
                     }
                     article {
                         height: 45rem;
-                        @include limbo-min {
+                        @include desk-min {
                             width: 35rem;
                         }
                         @include limbo-max {
+                            width: 43rem;
                             height: 55rem;
-                        }
-                        @include tab-max {
-                            width: 38rem;
                         }
                         @include mob-only {
                             width: 65%;

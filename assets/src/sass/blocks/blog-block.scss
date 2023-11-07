@@ -300,7 +300,7 @@
                     article {
                         height: 45rem;
                         @include limbo-min {
-                            width: 33rem;
+                            width: 35rem;
                         }
                         @include tab-max {
                             width: 38rem;

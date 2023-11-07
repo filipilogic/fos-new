@@ -200,11 +200,19 @@ if ( ! empty( $content_align ) ) {
 		
 		$width_mt_sec_img = get_field('width_mt_sec_img');
 		if( !$width_mt_sec_img ) {
-			$width_mt_sec_img = $image['width'] / 10 . 'rem';
+			if ( $image_mobile ) {
+				$width_mt_sec_img = $image_mobile['width'] / 10 . 'rem';
+			} else {
+				$width_mt_sec_img = $image['width'] / 10 . 'rem';
+			}
 		}
 		$height_mt_sec_img = get_field('height_mt_sec_img');
 		if( !$height_mt_sec_img ) {
-			$height_mt_sec_img = $image['height'] / 10 . 'rem';
+			if ( $image_mobile ) {
+				$height_mt_sec_img = $image_mobile['height'] / 10 . 'rem';
+			} else {
+				$height_mt_sec_img = $image['height'] / 10 . 'rem';
+			}
 		}
 		$left_mt_sec_img = get_field('left_mt_sec_img');
 		$right_mt_sec_img = get_field('right_mt_sec_img');

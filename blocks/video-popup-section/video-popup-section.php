@@ -188,12 +188,13 @@ if ( ! empty( $content_align ) ) {
 	
 	<?php while( have_rows('videos') ) : the_row();
 		$image = get_sub_field('media');
+		$image_mobile = get_sub_field('media_mobile');
 		$video_link = get_sub_field('video_link');
 	
 		if( $video_link ): ?>
 			<div class="column">
 				<a data-fancybox='video' data-type="iframe" data-preload="true" data-width="1270" data-height="720" href="<?php echo $video_link; ?>"  rel="lightbox">
-				<?php if( $image ) {
+				<?php if ( $image || $image_mobile ) {
 					$size = 'full';
 					$width_ld_vid_sec_img = get_sub_field('width_ld_vid_sec_img');
 					if( !$width_ld_vid_sec_img ) {
@@ -210,18 +211,37 @@ if ( ! empty( $content_align ) ) {
 					
 					$width_mt_vid_sec_img = get_sub_field('width_mt_vid_sec_img');
 					if( !$width_mt_vid_sec_img ) {
-						$width_mt_vid_sec_img = $image['width'] / 10 . 'rem';
+						if ( $image_mobile ) {
+							$width_mt_vid_sec_img = $image_mobile['width'] / 10 . 'rem';
+						} else {
+							$width_mt_vid_sec_img = $image['width'] / 10 . 'rem';
+						}
 					}
 					$height_mt_vid_sec_img = get_sub_field('height_mt_vid_sec_img');
 					if( !$height_mt_vid_sec_img ) {
-						$height_mt_vid_sec_img = $image['height'] / 10 . 'rem';
+						if ( $image_mobile ) {
+							$height_mt_vid_sec_img = $image_mobile['height'] / 10 . 'rem';
+						} else {
+							$height_mt_vid_sec_img = $image['height'] / 10 . 'rem';
+						}
 					}
 					$left_mt_vid_sec_img = get_sub_field('left_mt_vid_sec_img');
 					$right_mt_vid_sec_img = get_sub_field('right_mt_vid_sec_img');
 					$top_mt_vid_sec_img = get_sub_field('top_mt_vid_sec_img');
 					$bottom_mt_vid_sec_img = get_sub_field('bottom_mt_vid_sec_img');
-					$img_style = [ 'style' => '--bg-e-width-lg: ' . $width_ld_vid_sec_img . '; --bg-e-height-lg: ' . $height_ld_vid_sec_img . '; --bg-e-left-lg: ' . $left_ld_vid_sec_img . '; --bg-e-right-lg: ' . $right_ld_vid_sec_img . '; --bg-e-top-lg: ' . $top_ld_vid_sec_img . '; --bg-e-bottom-lg: ' . $bottom_ld_vid_sec_img . '; --bg-e-width-mt: ' . $width_mt_vid_sec_img . '; --bg-e-height-mt: ' . $height_mt_vid_sec_img . '; --bg-e-left-mt: ' . $left_mt_vid_sec_img . '; --bg-e-right-mt: ' . $right_mt_vid_sec_img . '; --bg-e-top-mt: ' . $top_mt_vid_sec_img . '; --bg-e-bottom-mt: ' . $bottom_mt_vid_sec_img . '; border-top-left-radius: ' . $image_border_top_left_radius . 'px; border-top-right-radius: ' . $image_border_top_right_radius . 'px; border-bottom-left-radius: ' . $image_border_bottom_left_radius . 'px; border-bottom-right-radius: ' . $image_border_bottom_right_radius . 'px;' ];
-					echo wp_get_attachment_image( $image['id'], $size, false, $img_style );
+					$img_style = '--bg-e-width-lg: ' . $width_ld_vid_sec_img . '; --bg-e-height-lg: ' . $height_ld_vid_sec_img . '; --bg-e-left-lg: ' . $left_ld_vid_sec_img . '; --bg-e-right-lg: ' . $right_ld_vid_sec_img . '; --bg-e-top-lg: ' . $top_ld_vid_sec_img . '; --bg-e-bottom-lg: ' . $bottom_ld_vid_sec_img . '; --bg-e-width-mt: ' . $width_mt_vid_sec_img . '; --bg-e-height-mt: ' . $height_mt_vid_sec_img . '; --bg-e-left-mt: ' . $left_mt_vid_sec_img . '; --bg-e-right-mt: ' . $right_mt_vid_sec_img . '; --bg-e-top-mt: ' . $top_mt_vid_sec_img . '; --bg-e-bottom-mt: ' . $bottom_mt_vid_sec_img . '; border-top-left-radius: ' . $image_border_top_left_radius . 'px; border-top-right-radius: ' . $image_border_top_right_radius . 'px; border-bottom-left-radius: ' . $image_border_bottom_left_radius . 'px; border-bottom-right-radius: ' . $image_border_bottom_right_radius . 'px;';
+					if ( $image ) {
+						$img_class = 'sec_desk_img';
+						if( $image_mobile ) {
+							$img_class .= ' hide_sec_desk_img_mob';
+						}
+						$img_atts = [ 'class' => $img_class, 'style' => $img_style];
+						echo wp_get_attachment_image( $image['id'], $size, false, $img_atts );
+					}
+					if ( $image_mobile ) {
+						$img_atts_mobile = [ 'class' => 'sec_mob_img', 'style' => $img_style ];
+						echo wp_get_attachment_image( $image_mobile['id'], $size, false, $img_atts_mobile );
+					}
 				} ?>
 				</a>
 			</div>

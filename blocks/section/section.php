@@ -224,7 +224,11 @@ if ( ! empty( $content_align ) ) {
 		<div class="right">
 			<?php
 				if ( $image ) {
-					$img_atts = [ 'class' => 'sec_desk_img', 'style' => $img_style];
+					$img_class = 'sec_desk_img';
+					if( $image_mobile ) {
+						$img_class .= ' hide_sec_desk_img_mob';
+					}
+					$img_atts = [ 'class' => $img_class, 'style' => $img_style];
 					echo wp_get_attachment_image( $image['id'], $size, false, $img_atts );
 				}
 				if ( $image_mobile ) {

@@ -1206,7 +1206,12 @@ div.margin-xl {
   height: 45rem;
   margin-right: 24px;
 }
-@media (min-width: 1199.6px) {
+@media (min-width: 1199.6px) and (max-width: 1360.5px) {
+  .il_block.il_blog-block-section.blog-carousel-enabled.hp-meet-our-donors-section .container .il_inner_posts_container article {
+    width: 265px;
+  }
+}
+@media (min-width: 1360.6px) {
   .il_block.il_blog-block-section.blog-carousel-enabled.hp-meet-our-donors-section .container .il_inner_posts_container article {
     width: 35rem;
   }

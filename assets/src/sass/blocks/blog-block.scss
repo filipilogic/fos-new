@@ -299,7 +299,11 @@
                     }
                     article {
                         height: 45rem;
-                        @include desk-min {
+                        // ovo promeniti ako ikad dodaju jedan vise story da width krece od desk min bez sm-desk-min
+                        @include sm-desk-only {
+                            width: 265px;
+                        }
+                        @include md-desk-min {
                             width: 35rem;
                         }
                         @include limbo-max {

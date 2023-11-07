@@ -302,6 +302,9 @@
                         @include limbo-min {
                             width: 35rem;
                         }
+                        @include limbo-max {
+                            height: 55rem;
+                        }
                         @include tab-max {
                             width: 38rem;
                         }
@@ -313,7 +316,7 @@
                         a {
                             padding: 3.3rem;
                             @include limbo-max {
-                                padding: 5rem;
+                                padding: 4rem;
                             }
                             &:before {
                                 content: '';

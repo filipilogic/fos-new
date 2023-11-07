@@ -182,8 +182,9 @@ if ( ! empty( $content_align ) ) {
 <?php get_template_part('components/intro'); ?>
 	<?php
 	$image = get_field('media');
+	$image_mobile = get_field('media_mobile');
 	$size = 'full';
-	if ($image) {
+	if ( $image || $image_mobile ) {
 		$width_ld_sec_img = get_field('width_ld_sec_img');
 		if( !$width_ld_sec_img ) {
 			$width_ld_sec_img = $image['width'] / 10 . 'rem';
@@ -209,10 +210,20 @@ if ( ! empty( $content_align ) ) {
 		$right_mt_sec_img = get_field('right_mt_sec_img');
 		$top_mt_sec_img = get_field('top_mt_sec_img');
 		$bottom_mt_sec_img = get_field('bottom_mt_sec_img');
-		$img_style = [ 'style' => '--bg-e-width-lg: ' . $width_ld_sec_img . '; --bg-e-height-lg: ' . $height_ld_sec_img . '; --bg-e-left-lg: ' . $left_ld_sec_img . '; --bg-e-right-lg: ' . $right_ld_sec_img . '; --bg-e-top-lg: ' . $top_ld_sec_img . '; --bg-e-bottom-lg: ' . $bottom_ld_sec_img . '; --bg-e-width-mt: ' . $width_mt_sec_img . '; --bg-e-height-mt: ' . $height_mt_sec_img . '; --bg-e-left-mt: ' . $left_mt_sec_img . '; --bg-e-right-mt: ' . $right_mt_sec_img . '; --bg-e-top-mt: ' . $top_mt_sec_img . '; --bg-e-bottom-mt: ' . $bottom_mt_sec_img . '; border-top-left-radius: ' . $image_border_top_left_radius . 'px; border-top-right-radius: ' . $image_border_top_right_radius . 'px; border-bottom-left-radius: ' . $image_border_bottom_left_radius . 'px; border-bottom-right-radius: ' . $image_border_bottom_right_radius . 'px;' ];
+		$img_style = '--bg-e-width-lg: ' . $width_ld_sec_img . '; --bg-e-height-lg: ' . $height_ld_sec_img . '; --bg-e-left-lg: ' . $left_ld_sec_img . '; --bg-e-right-lg: ' . $right_ld_sec_img . '; --bg-e-top-lg: ' . $top_ld_sec_img . '; --bg-e-bottom-lg: ' . $bottom_ld_sec_img . '; --bg-e-width-mt: ' . $width_mt_sec_img . '; --bg-e-height-mt: ' . $height_mt_sec_img . '; --bg-e-left-mt: ' . $left_mt_sec_img . '; --bg-e-right-mt: ' . $right_mt_sec_img . '; --bg-e-top-mt: ' . $top_mt_sec_img . '; --bg-e-bottom-mt: ' . $bottom_mt_sec_img . '; border-top-left-radius: ' . $image_border_top_left_radius . 'px; border-top-right-radius: ' . $image_border_top_right_radius . 'px; border-bottom-left-radius: ' . $image_border_bottom_left_radius . 'px; border-bottom-right-radius: ' . $image_border_bottom_right_radius . 'px;';
 	
-		?> <div class="right">
-		<?php echo wp_get_attachment_image( $image['id'], $size, false, $img_style ); ?>
+		?>
+		<div class="right">
+			<?php
+				if ( $image ) {
+					$img_atts = [ 'class' => 'sec_desk_img', 'style' => $img_style];
+					echo wp_get_attachment_image( $image['id'], $size, false, $img_atts );
+				}
+				if ( $image_mobile ) {
+					$img_atts_mobile = [ 'class' => 'sec_mob_img', 'style' => $img_style ];
+					echo wp_get_attachment_image( $image_mobile['id'], $size, false, $img_atts_mobile );
+				}
+			?>
 		</div>
 	<?php } ?>
 

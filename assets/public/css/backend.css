@@ -3419,24 +3419,72 @@ div.margin-xl {
     justify-content: flex-end;
   }
 }
-@media (max-width: 1199.5px) {
-  .il_section_inner.stack-tablet-reverse .il_block_intro {
-    order: 2;
+@media (max-width: 797.5px) {
+  .il_section_inner.ib-left.stack-mobile .il_block_intro, .il_section_inner.ib-right.stack-mobile .il_block_intro {
     flex-basis: 100%;
   }
-  .il_section_inner.stack-tablet-reverse .right {
-    order: 1;
+  .il_section_inner.ib-left.stack-mobile .right, .il_section_inner.ib-right.stack-mobile .right {
     flex-basis: 100%;
+  }
+  .il_section_inner.ib-left.stack-mobile .right img.sec_desk_img, .il_section_inner.ib-right.stack-mobile .right img.sec_desk_img {
+    display: none;
+  }
+}
+@media (min-width: 797.6px) {
+  .il_section_inner.ib-left.stack-mobile .right img.sec_mob_img, .il_section_inner.ib-right.stack-mobile .right img.sec_mob_img {
+    display: none;
+  }
+}
+@media (max-width: 1199.5px) {
+  .il_section_inner.ib-left.stack-tablet .il_block_intro, .il_section_inner.ib-right.stack-tablet .il_block_intro {
+    flex-basis: 100%;
+  }
+  .il_section_inner.ib-left.stack-tablet .right, .il_section_inner.ib-right.stack-tablet .right {
+    flex-basis: 100%;
+  }
+  .il_section_inner.ib-left.stack-tablet .right img.sec_desk_img, .il_section_inner.ib-right.stack-tablet .right img.sec_desk_img {
+    display: none;
+  }
+}
+@media (min-width: 1199.6px) {
+  .il_section_inner.ib-left.stack-tablet .right img.sec_mob_img, .il_section_inner.ib-right.stack-tablet .right img.sec_mob_img {
+    display: none;
   }
 }
 @media (max-width: 797.5px) {
-  .il_section_inner.stack-mobile-reverse .il_block_intro {
+  .il_section_inner.ib-left.stack-mobile-reverse .il_block_intro {
     order: 2;
     flex-basis: 100%;
   }
-  .il_section_inner.stack-mobile-reverse .right {
+  .il_section_inner.ib-left.stack-mobile-reverse .right {
     order: 1;
     flex-basis: 100%;
+  }
+  .il_section_inner.ib-left.stack-mobile-reverse .right img.sec_desk_img {
+    display: none;
+  }
+}
+@media (min-width: 797.6px) {
+  .il_section_inner.ib-left.stack-mobile-reverse .right img.sec_mob_img {
+    display: none;
+  }
+}
+@media (max-width: 1199.5px) {
+  .il_section_inner.ib-left.stack-tablet-reverse .il_block_intro {
+    order: 2;
+    flex-basis: 100%;
+  }
+  .il_section_inner.ib-left.stack-tablet-reverse .right {
+    order: 1;
+    flex-basis: 100%;
+  }
+  .il_section_inner.ib-left.stack-tablet-reverse .right img.sec_desk_img {
+    display: none;
+  }
+}
+@media (min-width: 1199.6px) {
+  .il_section_inner.ib-left.stack-tablet-reverse .right img.sec_mob_img {
+    display: none;
   }
 }
 .il_section_inner.ib-right .il_block_intro {
@@ -3444,16 +3492,6 @@ div.margin-xl {
 }
 .il_section_inner.ib-right .right {
   order: 1;
-}
-@media (max-width: 1199.5px) {
-  .il_section_inner.ib-right.stack-tablet-reverse .il_block_intro {
-    order: 1;
-    flex-basis: 100%;
-  }
-  .il_section_inner.ib-right.stack-tablet-reverse .right {
-    order: 2;
-    flex-basis: 100%;
-  }
 }
 @media (max-width: 797.5px) {
   .il_section_inner.ib-right.stack-mobile-reverse .il_block_intro {
@@ -3464,21 +3502,31 @@ div.margin-xl {
     order: 2;
     flex-basis: 100%;
   }
-}
-@media (max-width: 797.5px) {
-  .il_section_inner.stack-mobile .il_block_intro {
-    flex-basis: 100%;
+  .il_section_inner.ib-right.stack-mobile-reverse .right img.sec_desk_img {
+    display: none;
   }
-  .il_section_inner.stack-mobile .right {
-    flex-basis: 100%;
+}
+@media (min-width: 797.6px) {
+  .il_section_inner.ib-right.stack-mobile-reverse .right img.sec_mob_img {
+    display: none;
   }
 }
 @media (max-width: 1199.5px) {
-  .il_section_inner.stack-tablet .il_block_intro {
+  .il_section_inner.ib-right.stack-tablet-reverse .il_block_intro {
+    order: 1;
     flex-basis: 100%;
   }
-  .il_section_inner.stack-tablet .right {
+  .il_section_inner.ib-right.stack-tablet-reverse .right {
+    order: 2;
     flex-basis: 100%;
+  }
+  .il_section_inner.ib-right.stack-tablet-reverse .right img.sec_desk_img {
+    display: none;
+  }
+}
+@media (min-width: 1199.6px) {
+  .il_section_inner.ib-right.stack-tablet-reverse .right img.sec_mob_img {
+    display: none;
   }
 }
 .il_section_inner .right {

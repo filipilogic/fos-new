@@ -4080,14 +4080,14 @@ div.margin-xl {
   }
 }
 
-.donors-story-hero-section .il_block_intro .intro_text a {
+.play-button-section .il_block_intro .intro_text a.il_btn {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
   align-items: center;
   padding: 1.6rem 2.2rem;
 }
-.donors-story-hero-section .il_block_intro .intro_text a img {
+.play-button-section .il_block_intro .intro_text a.il_btn img {
   margin-top: -2px;
   margin-left: 18px;
 }

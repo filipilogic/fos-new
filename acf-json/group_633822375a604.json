@@ -435,7 +435,7 @@
             "label": "Inner Section Max Width",
             "name": "inner_section_max_width",
             "aria-label": "",
-            "type": "number",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -445,10 +445,8 @@
                 "id": ""
             },
             "default_value": "",
-            "min": "",
-            "max": "",
+            "maxlength": "",
             "placeholder": "",
-            "step": "",
             "prepend": "",
             "append": ""
         },
@@ -1272,5 +1270,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699533531
+    "modified": 1699533671
 }

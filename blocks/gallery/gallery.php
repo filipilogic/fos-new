@@ -18,7 +18,7 @@ $open_images_in_lightbox = get_field('open_images_in_lightbox');
 $col_in_style = 'style="';
 
 if( ! empty($inner_columns_container_max_width) ) {
-	$col_in_style .= 'max-width: ' . $inner_columns_container_max_width . ';';
+	$col_in_style .= '--custom-max-width-ld: ' . $inner_columns_container_max_width . ';';
 }
 
 

@@ -90,6 +90,9 @@
     padding-right: var(--b-col-inner-cont-space-right-mt);
   }
   position: relative;
+  @include desk-min {
+    width: var(--custom-max-width-ld);
+  }
   .il_block_bg {
     z-index: -1;
     overflow: hidden;

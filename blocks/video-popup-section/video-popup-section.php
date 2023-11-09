@@ -26,7 +26,7 @@ $class = 'il_block il_video-popup-section';
 $sec_in_style = 'style="';
 
 if( ! empty($inner_section_max_width) ) {
-	$sec_in_style .= 'max-width: ' . $inner_section_max_width . ';';
+	$sec_in_style .= '--custom-max-width-ld: ' . $inner_section_max_width . ';';
 }
 
 if ( ! empty( $content_custom_width_video_section ) ) {

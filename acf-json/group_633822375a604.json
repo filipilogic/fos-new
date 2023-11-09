@@ -450,7 +450,7 @@
             "placeholder": "",
             "step": "",
             "prepend": "",
-            "append": "px"
+            "append": ""
         },
         {
             "key": "field_63448568cb704",
@@ -1272,5 +1272,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699360273
+    "modified": 1699533531
 }

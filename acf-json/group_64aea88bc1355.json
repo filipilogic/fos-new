@@ -525,7 +525,7 @@
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
-            "append": "px"
+            "append": ""
         },
         {
             "key": "field_64aea88bd94d3",
@@ -992,5 +992,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699369299
+    "modified": 1699533538
 }

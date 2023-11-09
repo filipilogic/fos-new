@@ -25,7 +25,7 @@ $class = 'il_block il_section';
 $sec_in_style = 'style="';
 
 if( ! empty($inner_section_max_width) ) {
-	$sec_in_style .= 'max-width: ' . $inner_section_max_width . 'px;';
+	$sec_in_style .= 'max-width: ' . $inner_section_max_width . ';';
 }
 
 if ( ! empty( $block['className'] ) ) {

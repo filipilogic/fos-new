@@ -14,7 +14,9 @@ $slider_on_mobile_and_tablet = get_field('slider_on_mobile_and_tablet');
 $col_in_style = 'style="';
 
 if( ! empty($inner_columns_container_max_width) ) {
-	$col_in_style .= '--custom-max-width: ' . $inner_columns_container_max_width . ';';
+	$col_in_style .= '--custom-max-width-ld: ' . $inner_columns_container_max_width . ';';
+} else {
+	$sec_in_style .= '--custom-max-width-ld: var(--site-width);';
 }
 
 

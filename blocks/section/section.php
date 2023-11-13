@@ -26,6 +26,8 @@ $sec_in_style = 'style="';
 
 if( ! empty($inner_section_max_width) ) {
 	$sec_in_style .= '--custom-max-width-ld: ' . $inner_section_max_width . ';';
+} else {
+	$sec_in_style .= '--custom-max-width-ld: var(--site-width);';
 }
 
 if ( ! empty( $block['className'] ) ) {

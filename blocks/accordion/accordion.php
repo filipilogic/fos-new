@@ -77,6 +77,15 @@ if ( have_rows('accordion') ) :
 	<div class="il_accordion_inner container">
 	<?php get_template_part('components/intro');
 
+		$accordion_header_title_color = get_field('accordion_header_title_color');
+		if ( empty($accordion_header_title_color) ) {
+			$accordion_header_title_color = '#fff';
+		}
+		$accordion_body_color = get_field('accordion_body_color');
+		if ( empty($accordion_body_color) ) {
+			$accordion_body_color = '#fff';
+		}
+
 		$item=1;?>
 		<?php while( have_rows('accordion') ) : the_row();
 
@@ -87,19 +96,19 @@ if ( have_rows('accordion') ) :
 		if($item == 1 && get_field('first_open') ){
 
 			$open = 'open';
-			$display = 'display: flex';
+			$display = 'display: flex;';
 
 			}else{
 				$open = '';
-				$display = 'display: none';
+				$display = 'display: none;';
 			}
 			?>
 			<div class="il_accordion-item <?php echo $open ?>">
-				<h3 class="il_accordion-header">
+				<h3 class="il_accordion-header" style="color: <?php echo $accordion_header_title_color; ?>">
 					<?php echo $accordion_title; ?>
 				</h3>
-				<div class="il_accordion-body" style="<?php echo $display ?>">
-					<div class="il_accordion-body-left">
+				<div class="il_accordion-body" style="<?php echo $display; ?>">
+					<div class="il_accordion-body-left" style="color: <?php echo $accordion_body_color; ?>">
 					<?php echo $accordion_content; ?>
 					</div>
 				</div>

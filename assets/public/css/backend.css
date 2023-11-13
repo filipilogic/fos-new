@@ -577,7 +577,6 @@ div.margin-xl {
 }
 .il_accordion .il_accordion-item .il_accordion-header {
   font-size: 2rem;
-  color: #fff;
   cursor: pointer;
   padding: 1.25rem 3rem 1rem 6rem;
   position: relative;
@@ -609,7 +608,6 @@ div.margin-xl {
 .il_accordion .il_accordion-item .il_accordion-body {
   flex-wrap: wrap;
   justify-content: space-between;
-  color: #fff;
   padding: 1.25rem 3rem 0.5rem 6rem;
 }
 @media (max-width: 797.5px) {

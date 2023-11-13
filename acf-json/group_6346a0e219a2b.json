@@ -162,6 +162,42 @@
             "ui": 1
         },
         {
+            "key": "field_65521aaafef48",
+            "label": "Accordion Header Title Color",
+            "name": "accordion_header_title_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_65521c03fef49",
+            "label": "Accordion Body Color",
+            "name": "accordion_body_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
             "key": "field_634d6b68c2c4f",
             "label": "Background",
             "name": "background",
@@ -224,5 +260,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698684734
+    "modified": 1699881453
 }

@@ -10,6 +10,7 @@
         "renderTemplate": "video-popup-section.php"
     },
     "supports": {
-		"align": false
+		"align": false,
+		"anchor": true
 	}
 }

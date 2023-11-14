@@ -66,6 +66,22 @@ jQuery(document).ready(function ($) {
   });
 });
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+  document.getElementById("backToTopButton").addEventListener("click", function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("backToTopButton").style.opacity = "1";
+  } else {
+    document.getElementById("backToTopButton").style.opacity = "0";
+  }
+}
+
 /***/ }),
 
 /***/ "./assets/src/sass/frontend.scss":

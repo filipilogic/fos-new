@@ -45,4 +45,6 @@
 			?>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
+
+<button id="backToTopButton"><img src="/wp-content/uploads/2023/11/Group-2755.png"></button>
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -336,21 +336,21 @@ endif;
 				</div>
 
 				<!-- Bottom Section First -->
-				<div class="il_block il_video-popup-section info-box-width-60" style=" --b-video-popup-space-top-ld: 10.4rem; --b-video-popup-space-bottom-ld: 10.4rem; --b-video-popup-space-top-mt: 10rem; --b-video-popup-space-bottom-mt: 10rem;">
-					<div class="il_section_inner container ib-left stack-mobile">
-						<div class="il_block_intro align-left list-cols-1">
+				<div class="il_block il_video-popup-section info-box-width-60 " style=" --b-video-popup-space-top-ld: 10.4rem; --b-video-popup-space-bottom-ld: 10.4rem; --b-video-popup-space-top-mt: 10rem; --b-video-popup-space-bottom-mt: 10rem;">
+					<div class="il_section_inner container ib-left stack-mobile " style="--custom-max-width-ld: var(--site-width);">
+						<div class="il_block_intro align-left list-cols-1 " style="">
 							<div class="intro_before_title before-title-style-3 before-title-size-2 before-title-weight-700" style="--before-title-size-2-ld: 16px;--before-title-size-2-mt: 16px;--before_title_margin_bottom_ld: 1.6rem;--before_title_margin_bottom_mt: 10px;">ABOUT US</div>
-							<h2 class="intro_title title-style-2 title-size-2 title-weight-700" style="--title_margin_bottom_ld: 3.6rem;--title_margin_bottom_mt: 30px;">Why <span style="color: var(--color-3); font-weight: 400;">Sheba?</span></h2>
-							<div class="intro_text text-theme-color" style="--text_margin_bottom_mt: 40px;">
-								<p>The Canadian Friends of Sheba Medical Center is a registered charity based in Toronto committed to supporting the vital work of Sheba Medical Center, a global healthcare leader and the largest, most comprehensive hospital in Israel as well as the Middle East.</p>
-								<p>In addition to raising awareness and philanthropic support for Sheba’s humanitarian initiatives, compassionate care, cutting-edge research, and medical education activities, we are proud to serve as the medical center’s Canadian ambassador, helping foster collaborations that <b>serve the people of Canada, Israel, and the world.</b></p>
-								<p>It has been a privilege to contribute to Sheba’s transformative global efforts, and with your help, we will continue doing so for the benefit of patients everywhere.</p>
-							</div>
-						</div>
-						<div class="right">
-								<div class="column">
-									<a data-fancybox="video" data-type="iframe" data-preload="true" data-width="1270" data-height="720" href="https://www.youtube.com/watch?v=GRuLtIZ3ZyY" rel="lightbox">
-									<img fetchpriority="high" width="488" height="420" src="/wp-content/uploads/2023/10/Group-221.jpg" class="attachment-full size-full" alt="" decoding="async" style="--bg-e-width-lg: 48.8rem; --bg-e-height-lg: 42rem; --bg-e-left-lg: auto; --bg-e-right-lg: auto; --bg-e-top-lg: 0; --bg-e-bottom-lg: 0; --bg-e-width-mt: 60rem; --bg-e-height-mt: auto; --bg-e-left-mt: auto; --bg-e-right-mt: auto; --bg-e-top-mt: 0; --bg-e-bottom-mt: 0; border-top-left-radius: 36px; border-top-right-radius: 36px; border-bottom-left-radius: 0px; border-bottom-right-radius: 36px;" srcset="/wp-content/uploads/2023/10/Group-221.jpg 488w, /wp-content/uploads/2023/10/Group-221-300x258.jpg 300w" sizes="(max-width: 488px) 100vw, 488px">				</a>
+								<h2 class="intro_title title-style-2 title-size-2 title-weight-700" style="--title_margin_bottom_ld: 3.6rem;--title_margin_bottom_mt: 30px;">Why <span style="color: var(--color-3); font-weight: 400;">Sheba?</span></h2>
+								<div class="intro_text text-theme-color" style="--text_margin_bottom_mt: 40px;">
+									<p>The Canadian Friends of Sheba Medical Center is a registered charity based in Toronto committed to supporting the vital work of Sheba Medical Center, a global healthcare leader and the largest, most comprehensive hospital in Israel as well as the Middle East.</p>
+									<p>In addition to raising awareness and philanthropic support for Sheba’s humanitarian initiatives, compassionate care, cutting-edge research, and medical education activities, we are proud to serve as the medical center’s Canadian ambassador, helping foster collaborations that <b>serve the people of Canada, Israel, and the world.</b></p>
+									<p>It has been a privilege to contribute to Sheba’s transformative global efforts, and with your help, we will continue doing so for the benefit of patients everywhere.</p>
+								</div>
+
+								</div><div class="right">
+									<div class="column">
+									<a data-fancybox="video" data-type="iframe" data-preload="true" data-width="1270" data-height="720" href="https://www.youtube.com/watch?v=ge2hrlLL0qE" rel="lightbox">
+									<img loading="lazy" decoding="async" width="488" height="420" src="/wp-content/uploads/2023/11/Group-221.png" class="sec_desk_img" alt="" style="--bg-e-width-lg: 48.8rem; --bg-e-height-lg: 42rem; --bg-e-left-lg: auto; --bg-e-right-lg: auto; --bg-e-top-lg: 0; --bg-e-bottom-lg: 0; --bg-e-width-mt: 60rem; --bg-e-height-mt: auto; --bg-e-left-mt: auto; --bg-e-right-mt: auto; --bg-e-top-mt: 0; --bg-e-bottom-mt: 0; border-top-left-radius: 36px; border-top-right-radius: 36px; border-bottom-left-radius: 0px; border-bottom-right-radius: 36px;" srcset="/wp-content/uploads/2023/11/Group-221.png 488w, /wp-content/uploads/2023/11/Group-221-300x258.png 300w" sizes="(max-width: 488px) 100vw, 488px">				</a>
 								</div>
 						</div>
 					</div>

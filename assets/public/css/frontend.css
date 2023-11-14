@@ -2180,7 +2180,7 @@ main {
   .header-version-1 .header-main-inner #primary-menu > li .sub-menu-trigger > .sub-menu {
     font-size: 17px;
   }
-  .header-version-1 .header-main-inner #primary-menu > li:nth-last-child(2) a {
+  .header-version-1 .header-main-inner #primary-menu > li:nth-last-child(2) {
     margin-right: 5.7rem;
   }
   .header-version-1 .header-main-inner #primary-menu > li.menu-li-hide-desktop {

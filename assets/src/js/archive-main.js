@@ -11,6 +11,12 @@ jQuery(document).ready(function ($) {
                 var $html = $(response);
                 var $newContent = $html.find('.archive-main-content-posts').html();
                 $('.archive-main-content-posts').html($newContent);
+                  
+                // Scroll to the top of the parent div of .pagination
+                var parentDivTop = $('.archive-main-content-posts').offset().top - 250;
+                $('html, body').animate({
+                    scrollTop: parentDivTop
+                }, 100); // You can adjust the animation speed if needed
             }
         });
     });

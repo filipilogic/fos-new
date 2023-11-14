@@ -373,6 +373,8 @@ endif;
 				</div>
 			</div>
 		<?php endif; ?>
+
+		<button id="backToTopButton"><img src="/wp-content/uploads/2023/11/Group-2755.png"></button>
 	</main><!-- #main -->
 
 <?php

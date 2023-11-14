@@ -1108,8 +1108,7 @@ div.margin-xl {
 }
 @media (max-width: 479.5px) {
   .footer_main .cols-3 .column .footer-last-col-socials .footer-last-col-single {
-    justify-content: center;
-    max-width: 70%;
+    max-width: 75%;
     margin-left: auto;
     margin-right: auto;
   }

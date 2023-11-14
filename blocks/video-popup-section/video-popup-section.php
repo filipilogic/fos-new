@@ -188,14 +188,19 @@ if ( ! empty( $content_align ) ) {
 <?php get_template_part('components/intro'); ?>
 <div class="right">
 	
-	<?php while( have_rows('videos') ) : the_row();
+	<?php 
+
+    $random_number = rand(1000, 9999);
+    $fancybox_data = 'video-' . $random_number;
+
+	while( have_rows('videos') ) : the_row();
 		$image = get_sub_field('media');
 		$image_mobile = get_sub_field('media_mobile');
 		$video_link = get_sub_field('video_link');
 	
 		if( $video_link ): ?>
 			<div class="column">
-				<a data-fancybox='video' data-type="iframe" data-preload="true" data-width="1270" data-height="720" href="<?php echo $video_link; ?>"  rel="lightbox">
+				<a data-fancybox='<?php echo $fancybox_data; ?>' data-type="iframe" data-preload="true" data-width="1270" data-height="720" href="<?php echo $video_link; ?>"  rel="lightbox">
 				<?php if ( $image || $image_mobile ) {
 					$size = 'full';
 					$width_ld_vid_sec_img = get_sub_field('width_ld_vid_sec_img');

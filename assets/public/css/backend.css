@@ -5319,6 +5319,9 @@ main {
 .post_nav_container .post-navigation .nav-links {
   justify-content: space-between;
 }
+.post_nav_container .post-navigation .nav-links .nav-next {
+  margin-left: auto;
+}
 .post_nav_container .post-navigation .nav-links a {
   color: var(--color-1);
   text-decoration: none;

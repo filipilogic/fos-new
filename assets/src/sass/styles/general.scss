@@ -119,6 +119,9 @@ h6 {
   }
   .post-navigation .nav-links {
     justify-content: space-between;
+    .nav-next {
+      margin-left: auto;
+    }
     a {
      color: var(--color-1);
      text-decoration: none;

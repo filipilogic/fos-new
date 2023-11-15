@@ -400,6 +400,7 @@ function custom_post_navigation_shortcode() {
         the_post_navigation(array(
             'prev_text' => '<b><</b> Previous',
             'next_text' => 'Next <b>></b>',
+            'in_same_term' => true,
         ));
         ?>
     </div>

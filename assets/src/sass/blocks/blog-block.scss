@@ -86,7 +86,7 @@
                     .entry-title{
                         color: var(--color-1);
                         margin-bottom: 20px;
-                        font-size: 22px;
+                        font-size: 20px;
                         font-weight: 600;
                         @include limbo-max {
                             font-size: 21px;
@@ -96,10 +96,9 @@
                     .entry-content{
                         p {
                             color: var(--color-text);
-                            font-size: 18px;
+                            font-size: 16px;
                             margin-bottom: 3rem;
                             @include limbo-max {
-                                font-size: 16px;
                                 margin-bottom: 30px;
                             }
                         }

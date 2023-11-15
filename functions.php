@@ -398,8 +398,8 @@ function custom_post_navigation_shortcode() {
         <?php
         // Output the post navigation
         the_post_navigation(array(
-            'prev_text' => '<b><</b> Earlier Event',
-            'next_text' => 'Later Event <b>></b>',
+            'prev_text' => '<b><</b> Previous',
+            'next_text' => 'Next <b>></b>',
         ));
         ?>
     </div>

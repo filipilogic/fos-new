@@ -30,51 +30,53 @@ if( $col_cont_bg_img_mob ) {
 while( have_rows('elements') ) : the_row();
 
 $col_cont_image = get_sub_field('element');
-$col_cont_width_ld = get_sub_field('width_ld');
-if( !$col_cont_width_ld ) {
-    $col_cont_width_ld = $col_cont_image['width'] / 10 . 'rem';
+if ( $col_cont_image ) {
+    $col_cont_width_ld = get_sub_field('width_ld');
+    if( !$col_cont_width_ld ) {
+        $col_cont_width_ld = $col_cont_image['width'] / 10 . 'rem';
+    }
+    $col_cont_height_ld = get_sub_field('height_ld');
+    if( !$col_cont_height_ld ) {
+        $col_cont_height_ld = $col_cont_image['height'] / 10 . 'rem';
+    }
+    $col_cont_left_ld = get_sub_field('left_ld');
+    $col_cont_right_ld = get_sub_field('right_ld');
+    $col_cont_top_ld = get_sub_field('top_ld');
+    $col_cont_bottom_ld = get_sub_field('bottom_ld');
+    
+    $col_cont_width_mt = get_sub_field('width_mt');
+    if( !$col_cont_width_mt ) {
+        $col_cont_width_mt = $col_cont_image['width'] / 20 . 'rem';
+    }
+    $col_cont_height_mt = get_sub_field('height_mt');
+    if( !$col_cont_height_mt ) {
+        $col_cont_height_mt = $col_cont_image['height'] / 20 . 'rem';
+    }
+    $col_cont_left_mt = get_sub_field('left_mt');
+    $col_cont_right_mt = get_sub_field('right_mt');
+    $col_cont_top_mt = get_sub_field('top_mt');
+    $col_cont_bottom_mt = get_sub_field('bottom_mt');
+    
+    $col_cont_bg_elem_style = '--bg-e-width-lg: ' . $col_cont_width_ld . '; --bg-e-height-lg: ' . $col_cont_height_ld . '; --bg-e-left-lg: ' . $col_cont_left_ld . '; --bg-e-right-lg: ' . $col_cont_right_ld . '; --bg-e-top-lg: ' . $col_cont_top_ld . '; --bg-e-bottom-lg: ' . $col_cont_bottom_ld . '; --bg-e-width-mt: ' . $col_cont_width_mt . '; --bg-e-height-mt: ' . $col_cont_height_mt . '; --bg-e-left-mt: ' . $col_cont_left_mt . '; --bg-e-right-mt: ' . $col_cont_right_mt . '; --bg-e-top-mt: ' . $col_cont_top_mt . '; --bg-e-bottom-mt: ' . $col_cont_bottom_mt;
+    
+    $col_cont_hide_on_desktop = get_sub_field('hide_on_laptop_and_desktop');
+    
+    if( $col_cont_hide_on_desktop ) {
+        $col_cont_display_desktop = 'none';
+        $col_cont_bg_elem_style  .= '; --bg-e-display-desktop: ' .  $col_cont_display_desktop;
+    }
+    
+    $col_cont_show_on_mobile = get_sub_field('show_on_mobile_and_tablet');
+    
+    if( ! $col_cont_show_on_mobile ) {
+        $col_cont_display_mobile = 'none';
+        $col_cont_bg_elem_style  .= '; --bg-e-display-mobile: ' .  $col_cont_display_mobile;
+    }
+    
+    $col_cont_image_atts = [ 'class' => 'bg_element', 'style' => $col_cont_bg_elem_style ];
+    
+    echo wp_get_attachment_image( $col_cont_image['id'], $col_cont_size, "", $col_cont_image_atts );
 }
-$col_cont_height_ld = get_sub_field('height_ld');
-if( !$col_cont_height_ld ) {
-    $col_cont_height_ld = $col_cont_image['height'] / 10 . 'rem';
-}
-$col_cont_left_ld = get_sub_field('left_ld');
-$col_cont_right_ld = get_sub_field('right_ld');
-$col_cont_top_ld = get_sub_field('top_ld');
-$col_cont_bottom_ld = get_sub_field('bottom_ld');
-
-$col_cont_width_mt = get_sub_field('width_mt');
-if( !$col_cont_width_mt ) {
-    $col_cont_width_mt = $col_cont_image['width'] / 20 . 'rem';
-}
-$col_cont_height_mt = get_sub_field('height_mt');
-if( !$col_cont_height_mt ) {
-    $col_cont_height_mt = $col_cont_image['height'] / 20 . 'rem';
-}
-$col_cont_left_mt = get_sub_field('left_mt');
-$col_cont_right_mt = get_sub_field('right_mt');
-$col_cont_top_mt = get_sub_field('top_mt');
-$col_cont_bottom_mt = get_sub_field('bottom_mt');
-
-$col_cont_bg_elem_style = '--bg-e-width-lg: ' . $col_cont_width_ld . '; --bg-e-height-lg: ' . $col_cont_height_ld . '; --bg-e-left-lg: ' . $col_cont_left_ld . '; --bg-e-right-lg: ' . $col_cont_right_ld . '; --bg-e-top-lg: ' . $col_cont_top_ld . '; --bg-e-bottom-lg: ' . $col_cont_bottom_ld . '; --bg-e-width-mt: ' . $col_cont_width_mt . '; --bg-e-height-mt: ' . $col_cont_height_mt . '; --bg-e-left-mt: ' . $col_cont_left_mt . '; --bg-e-right-mt: ' . $col_cont_right_mt . '; --bg-e-top-mt: ' . $col_cont_top_mt . '; --bg-e-bottom-mt: ' . $col_cont_bottom_mt;
-
-$col_cont_hide_on_desktop = get_sub_field('hide_on_laptop_and_desktop');
-
-if( $col_cont_hide_on_desktop ) {
-    $col_cont_display_desktop = 'none';
-    $col_cont_bg_elem_style  .= '; --bg-e-display-desktop: ' .  $col_cont_display_desktop;
-}
-
-$col_cont_show_on_mobile = get_sub_field('show_on_mobile_and_tablet');
-
-if( ! $col_cont_show_on_mobile ) {
-    $col_cont_display_mobile = 'none';
-    $col_cont_bg_elem_style  .= '; --bg-e-display-mobile: ' .  $col_cont_display_mobile;
-}
-
-$col_cont_image_atts = [ 'class' => 'bg_element', 'style' => $col_cont_bg_elem_style ];
-
-echo wp_get_attachment_image( $col_cont_image['id'], $col_cont_size, "", $col_cont_image_atts );
 
 endwhile;
 

@@ -220,7 +220,8 @@ if ( ! empty( $content_align ) ) {
 					if( !$width_mt_vid_sec_img ) {
 						if ( $image_mobile ) {
 							$width_mt_vid_sec_img = $image_mobile['width'] / 10 . 'rem';
-						} else {
+						}
+						if ( !$image_mobile && $image ) {
 							$width_mt_vid_sec_img = $image['width'] / 10 . 'rem';
 						}
 					}
@@ -228,7 +229,8 @@ if ( ! empty( $content_align ) ) {
 					if( !$height_mt_vid_sec_img ) {
 						if ( $image_mobile ) {
 							$height_mt_vid_sec_img = $image_mobile['height'] / 10 . 'rem';
-						} else {
+						}
+						if ( !$image_mobile && $image ) {
 							$height_mt_vid_sec_img = $image['height'] / 10 . 'rem';
 						}
 					}

@@ -4,6 +4,7 @@ $custom_padding = get_field('custom_padding');
 $padding = get_field_object('padding');
 
 $post_content = get_field('post_content');
+$show_excerpt = get_field('show_excerpt');
 
 $class = 'il_block il_content-and-sidebar';
 if ( ! empty( $margin ) ) {
@@ -68,7 +69,11 @@ if( $custom_padding ) {
     <div class="container">
         <div class="cas-main-container-content">
             <?php get_template_part('components/post-title'); ?>
-            <?php get_template_part('components/post-excerpt'); ?>
+            <?php
+			if ( $show_excerpt ) {
+				get_template_part('components/post-excerpt');
+			}
+			?>
             <div class="entry-date"><?php echo get_the_date(); ?></div>
             <div class="social-share"><span>Share</span><?php echo il_social_share(); ?></div>
             <div class="post_content"><?php echo $post_content; ?></div>

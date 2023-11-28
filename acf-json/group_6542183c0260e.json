@@ -119,6 +119,26 @@
             "endpoint": 0
         },
         {
+            "key": "field_6565b971f194c",
+            "label": "Show Excerpt",
+            "name": "show_excerpt",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
             "key": "field_6542183c2453a",
             "label": "Background",
             "name": "",
@@ -215,5 +235,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698845693
+    "modified": 1701165536
 }

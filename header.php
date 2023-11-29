@@ -87,9 +87,9 @@
 			<?php endif; ?>
 
 	<?php 
-		$transparent_header = get_field('post_transparent_header');
+		$post_header_background_color = get_field('post_header_background_color');
 	?>
-	<header id="masthead" class="header-main <?php if ( $transparent_header && ! is_home() && ! is_category() ) echo 'post-transparent-header'; ?>">
+	<header id="masthead" class="header-main " <?php if ( $post_header_background_color && ! is_home() && ! is_category() ) echo 'style="background: ' . $post_header_background_color . '"'; ?>>
 		<div class="container header-main-inner">
 			<div class="logo-wrap">
 				<?php

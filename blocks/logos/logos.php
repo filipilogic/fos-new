@@ -13,6 +13,8 @@ $padding = get_field_object('padding');
 
 $style = get_field('style');
 
+$carousel_on_desktop = get_field('carousel_on_desktop');
+$carousel_on_mobile = get_field('carousel_on_mobile');
 
 $anchor = '';
 if ( ! empty( $block['anchor'] ) ) {
@@ -90,7 +92,7 @@ if ( ! empty( $style ) ) {
 <?php get_template_part('components/background'); ?>
 	<div class="container">
 		<?php get_template_part('components/intro'); ?>
-		<div class="il_logos_inner">
+		<div class="il_logos_inner <?php if ( $carousel_on_desktop ) echo 'carousel_on_desktop '; if ( $carousel_on_mobile ) echo 'carousel_on_mobile'; ?>">
 			<?php while( have_rows('images') ) : the_row();
 				$image = get_sub_field('image');
 

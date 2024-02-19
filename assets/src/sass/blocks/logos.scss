@@ -48,9 +48,21 @@
         }
         // enable flickity on limbo-max
         @include limbo-max {
-            &:after {
+            &.carousel_on_mobile:after {
                 content: 'flickity';
                 display: none;
+            }
+        }
+        // enable flickity on desk-min
+        @include desk-min {
+            &.carousel_on_desktop {
+                .column {
+                    width: calc(100% / 6);
+                }
+                &:after {
+                    content: 'flickity';
+                    display: none;
+                }
             }
         }
     }

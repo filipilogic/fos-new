@@ -75,7 +75,7 @@
             "layout": "table",
             "pagination": 0,
             "min": 0,
-            "max": 6,
+            "max": 0,
             "collapsed": "",
             "button_label": "Add Row",
             "rows_per_page": 20,
@@ -148,6 +148,46 @@
             },
             "placement": "top",
             "endpoint": 0
+        },
+        {
+            "key": "field_65d347666dd07",
+            "label": "Carousel on Desktop",
+            "name": "carousel_on_desktop",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_65d347a86dd08",
+            "label": "Carousel on Mobile",
+            "name": "carousel_on_mobile",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
         },
         {
             "key": "field_639ddd170b48e",
@@ -237,5 +277,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698146754
+    "modified": 1708345379
 }

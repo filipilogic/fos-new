@@ -1016,3 +1016,34 @@
     overflow: hidden;
   }
 }
+
+.upcoming-event-hero-group.gala-returning-hero-group {
+  .upcoming-event-hero-group-first-sec {
+    .il_block_intro {
+      .buttons {
+        .il_btn {
+          @include mob-only {
+            width: 135px;
+            height: 135px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.upcoming-event-bottom-group.gala-returning-bottom-group {
+  .upcoming-event-bottom-group-third-sec {
+    .il_block_intro {
+      .buttons-first {
+        .il_btn {
+          @include mob-only {
+            &:last-child {
+              margin-top: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

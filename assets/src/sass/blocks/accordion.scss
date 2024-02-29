@@ -161,5 +161,17 @@
         }
       }
     }
-  }  
+  }
+}
+
+.acc-no-max-size-li {  
+  .il_accordion-item {
+    .il_accordion-body {
+      ul {
+        li {
+          max-width: none;
+        }
+      }
+    }
+  }
 }

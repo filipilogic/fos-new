@@ -732,6 +732,10 @@ div.margin-xl {
   transform: scaleY(-1);
 }
 
+.acc-no-max-size-li .il_accordion-item .il_accordion-body ul li {
+  max-width: none;
+}
+
 .il_agenda {
   padding-top: var(--b-agenda-space-top-ld);
   padding-bottom: var(--b-agenda-space-bottom-ld);

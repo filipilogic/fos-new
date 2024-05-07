@@ -105,7 +105,7 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_654a2df9d57a1",
+            "key": "field_6602db211d619",
             "label": "Media Mobile",
             "name": "media_mobile",
             "aria-label": "",
@@ -435,7 +435,7 @@
             "label": "Inner Section Max Width",
             "name": "inner_section_max_width",
             "aria-label": "",
-            "type": "text",
+            "type": "number",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -445,10 +445,12 @@
                 "id": ""
             },
             "default_value": "",
-            "maxlength": "",
+            "min": "",
+            "max": "",
             "placeholder": "",
+            "step": "",
             "prepend": "",
-            "append": ""
+            "append": "px"
         },
         {
             "key": "field_63448568cb704",
@@ -1270,5 +1272,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699533671
+    "modified": 1711463324
 }
